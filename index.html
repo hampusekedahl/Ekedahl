@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hampus Ekedahl</title>
+  <meta name="description" content="Portfolio website of Hampus Ekedahl, a System Engineer based in Sweden." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+    .section-title {
+      --primary-color: #2B59C3;
+      --secondary-color: #FF9770;
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .section-title .title-tagline {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+    }
+
+    .section-title .title-tagline .tagline-icon {
+      fill: var(--primary-color);
+    }
+
+    .section-title .title {
+      position: relative;
+      display: inline-block;
+    }
+
+    .highlighted-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .highlighted-svg {
+      position: absolute;
+      top: 70%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-50%);
+      z-index: 0;
+      fill: none;
+      stroke: var(--secondary-color);
+      stroke-width: 2;
+    }
+
+    .section-title .description {
+      font-size: 16px;
+    }
+
+    @media (min-width: 768px) {
+      .section-title .description {
+        font-size: 18px;
+      }
+    }
+
+    .partners {
+      font-family: 'Inter', sans-serif;
+      --primary-color: #2B59C3;
+      background-color: #fff;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .partners .badge {
+      background-color: transparent;
+      font-size: 14px;
+      position: relative;
+      z-index: 0;
+      color: var(--primary-color);
+    }
+
+    .partners .badge:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: var(--primary-color);
+      opacity: .1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .partners .partner-wrapper {
+      background-color: transparent;
+      transition: all .3s;
+      height: 200px;
+      border: 1px solid;
+      border-color: #f7f7f7;
+    }
+
+    .partners .partner-wrapper img {
+      filter: grayscale(100%);
+      transition: all .3s;
+    }
+
+    .partners .partner-wrapper:hover {
+      background-color: #f8f9fa;
+    }
+
+    .partners .partner-wrapper:hover img {
+      filter: grayscale(0%);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start Section Title -->
+  <section class="min-vh-100 d-flex align-items-center justify-content-center py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-xl-7 col-lg-9">
+          <div class="section-title text-center">
+            <span class="title-tagline d-inline-flex align-items-center fw-semibold text-uppercase mb-3"><svg
+                xmlns="http://www.w3.org/2000/svg" width="10" height="10" class="tagline-icon me-2" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
+              </svg>ABOUT ME</span>
+            <h2 class="display-5 fw-semibold mb-md-4 mb-3">
+              Hello! I'm <span class="title">
+                <span class="highlighted-text">Hampus Ekedahl</span>
+                
+              </span>
+            </h2>
+            <p class="description text-secondary m-0">I am a System Engineer, based in Sweden, with a deep
+              interest in Technology. Over the years, I've honed my skills in Software, Systems, and Networking, and I've
+              had the pleasure of working on various projects that have enriched my professional and personal life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="min-vh-100 d-flex align-items-center justify-content-center partners">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-4 col-lg-5 my-3">
+          <span class="badge rounded-0 d-inline-block px-3 py-2 mb-3 fw-normal">SKILLS</span>
+          <h2 class="display-6 mb-4 fw-semibold">Technologies and Companies I'm Familiar With</h2>
+          <p class="text-muted fs-5 fw-light">
+            Throughout my professional and private ventures, I have gained extensive experience with a variety of
+            technologies and companies.
+          </p>
+        </div>
+        <div class="col-xl-7 col-lg-7 offset-xl-1 my-3">
+          <div class="row g-0">
+            <div class="col-md-4 col-sm-6">
+              <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
+                <img src="img/vmware.png" class="img-fluid" width="125" alt="VMware Logo" />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
+                <img src="img/elk.png" class="img-fluid" width="125" alt="ELK Logo" />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
+                <img src="img/microsoft.png" class="img-fluid" width="125" alt="Microsoft Logo" />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
+                <img src="img/saab.png" class="img-fluid" width="125" alt="Saab Logo" />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
+                <img src="img/jira.png" class="img-fluid" width="125" alt="Jira Logo" />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
+                <img src="img/c_family.png" class="img-fluid" width="125" alt="C Programming Language Logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Title -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    const targetText = "Hampus Ekedahl";
+    const firstWord = "Hampus ";
+    const secondWord = "Ekedahl";
+    const displayElement = document.querySelector('.highlighted-text');
+    let currentText = '';
+    let isErasing = false;
+    let currentIndex = 0;
+
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function getRandomChar() {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+      return chars.charAt(getRandomInt(0, chars.length - 1));
+    }
+
+    function type() {
+      if (!isErasing) {
+        if (currentIndex < firstWord.length) {
+          currentText += firstWord.charAt(currentIndex);
+          currentIndex++;
+          displayElement.innerHTML = currentText;
+          setTimeout(type, getRandomInt(50, 150));
+        } else if (currentIndex < targetText.length) {
+          const secondIndex = currentIndex - firstWord.length;
+          if (Math.random() < 0.2 && currentText.length < targetText.length) { // 20% chance of error
+            currentText += getRandomChar();
+            displayElement.innerHTML = currentText;
+            setTimeout(() => {
+              currentText = currentText.slice(0, -1); // remove the wrong character
+              displayElement.innerHTML = currentText;
+              setTimeout(type, 1000);
+            }, 1000);
+          } else {
+            currentText += secondWord.charAt(secondIndex);
+            currentIndex++;
+            displayElement.innerHTML = currentText;
+            setTimeout(type, getRandomInt(50, 150));
+          }
+        } else {
+          isErasing = true;
+          setTimeout(type, 1000);
+        }
+      } else {
+        if (currentIndex > 0) {
+          currentText = currentText.slice(0, -1);
+          currentIndex--;
+          displayElement.innerHTML = currentText;
+          setTimeout(type, getRandomInt(50, 150));
+        } else {
+          isErasing = false;
+          currentText = '';
+          currentIndex = 0;
+          setTimeout(type, 1000);
+        }
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(type, 500);
+    });
+  </script>
+</body>
+
+</html>
